@@ -12,10 +12,17 @@
 <body>
 
     <main class="container">
+        <!-- Top Bar for Share Button -->
+        <div class="top-bar">
+            <button class="share-btn" onclick="sharePage()" aria-label="Share Page">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </button>
+        </div>
+
         <!-- Profile Image -->
         <div class="profile-img-wrapper">
             <img src="https://ik.imagekit.io/lzl0sgfim/WhatsApp%20Image%202026-09-24%20at%2018.26.39.jpeg"
-                alt="Natalie Kim" class="profile-img">
+                alt="Taffany Williamson" class="profile-img">
         </div>
 
         <!-- Profile Details -->
@@ -38,6 +45,20 @@
         </div>
     </main>
 
+    <!-- Share Script -->
+    <script>
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: document.title,
+                    url: window.location.href
+                }).catch(err => console.log('Share canceled'));
+            } else {
+                navigator.clipboard.writeText(window.location.href);
+                alert("Link copied to clipboard!");
+            }
+        }
+    </script>
 </body>
 
 </html>
