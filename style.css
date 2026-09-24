@@ -102,7 +102,7 @@ body {
 .link-btn {
     display: block;
     width: 100%;
-    padding: 0.95rem 1.5rem;
+    padding: 1.25rem 1.5rem;
     /* Light teal/cyan color matching screenshot */
     background-color: #5b3b2a;
     color: whitesmoke;
