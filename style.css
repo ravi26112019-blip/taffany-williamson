@@ -10,7 +10,6 @@ body {
     user-select: none;
     display: flex;
     justify-content: center;
-    align-items: center;
     /* Soft warm orange/peach vertical gradient */
     background: linear-gradient(180deg, #ddb9a6 0%, #fef3e2 100%);
     padding: 2rem 1rem;
