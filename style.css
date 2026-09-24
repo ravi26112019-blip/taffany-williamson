@@ -51,13 +51,14 @@ body {
 .tagline {
     font-size: 0.9rem;
     font-weight: 500;
-    color: #696868;
+    color: #3a3a3a;
     margin-bottom: 1rem;
 }
 
 .bio {
     font-size: 0.85rem;
-    color: #333333;
+    color: #333333c9;
+    font-weight: 500;
     max-width: 16rem;
     line-height: 1.45;
     margin-bottom: 1.25rem;
